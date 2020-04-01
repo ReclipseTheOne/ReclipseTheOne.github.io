@@ -1,16 +1,18 @@
 <html>
-<head>
-  <script type="text/javascript">
-    var number = 123;
-  </script>
-</head>
-
-<body>
-    <h1>
-      the value for number is:
-      <script type="text/javascript">
-        document.write(number)
+  <head>
+    <script>
+      var a = 0
+      function increment() {
+        a++;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>The value of the variable "a" is
+      <script>
+        document.write(a)
       </script>
     </h1>
-</body>
+    <button onClick="increment()">Increase my numbber</button>
+  </body>
 </html>
