@@ -1,18 +1,11 @@
-<html>
-  <head>
-    <script>
-      var a = 0
-      function increment() {
-        a++;
-      }
-    </script>
-  </head>
-  <body>
-    <h1>The value of the variable "a" is
-      <script>
-        document.write(a)
-      </script>
-    </h1>
-    <button onClick="increment()">Increase my numbber</button>
-  </body>
-</html>
+<body>
+  <button onClick="cool()">click me</button>
+  <p id="foo">0</p>
+  <script>
+    var stuff = 0;
+    function cool() {
+      stuff++;
+      document.getElementById("foo").textContent = stuff
+    }
+  </script>
+</body>
