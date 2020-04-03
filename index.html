@@ -7,14 +7,12 @@
       }
       function Energy() {
         player.electron++;
+        document.getElementById("energy").innerText = player.electron;
       }
     </script>
   </head>
 <body>
   <p class = text>You've got <span id="energy">1</span>V of Electricity!
-    <script>
-            document.getElementById("energy").innerText = player.electron
-    </script>
   <p>If the page updated</p>
   </p>
   <button onClick="Energy()">Gather Electrons!</button>
