@@ -1,27 +1,8 @@
+<html>
+  <head>
+    <title>Reclipse's page!</title>
+  </head>
 <body>
-  <p>You've got </p><p id=cc1>0</p><p> coins!</p>
-  <button onClick="increment()">Pick up an another coin!</button>
-  <p>You've got</p><p id=numberofmds>0</p><p>metal detectors!</p>
-  <script>
-    var c1 = 0;
-    function increment() {
-      c1++;
-      document.getElementById("cc1").textContent = c1
-    }
-    var mds = 0;
-    var mdcost = 30
-    function buymds() {
-      if c1 > mdcost {
-        mds++;
-        document.getElementById("numberofmds").textContent = mds
-        mdcost = mdcost * 1.5;
-      }
-      else {
-        alert("Not enough coins!")
-      }
-    }
-    while mds > 0 {
-      setInterval(function(){ c1 = c1 + (1 * mds); },1000)
-  </script>
-  <button onClick="buymds()">Buy a metal detector!</button>
+  <h1>How do I put a variable in a sentence like "You've got <variable> coins!"?</h1>
 </body>
+</html>
