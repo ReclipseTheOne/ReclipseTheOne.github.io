@@ -3,16 +3,19 @@
     <title>Reclipse's page!</title>
     <script>
       var player {
-        Electricity = 1
+        electron = 1
       }
-      function Energy++() {
-        Electricity++;
+      function Energy() {
+        electron++;
       }
     </script>
   </head>
 <body>
-  <p class = text>You've got <span id="energy">1</span>V of Electricity!</p>
-  <script>document.getElementById("energy").innerText = notation(player.Electricity);</script>
-  <button onClick="Energy++()">Gather Electrons!</button>
+  <p class = text>You've got <span id="energy">1</span>V of Electricity!
+    <script>
+            document.getElementById("energy").innerText = notation(player.electron)
+    </script>
+  </p>
+  <button onClick="Energy()">Gather Electrons!</button>
 </body>
 </html>
