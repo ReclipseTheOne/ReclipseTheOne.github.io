@@ -23,11 +23,27 @@
         player.electron++;
         document.getElementById("energy").innerText = player.electron;
       }
+      function tab1() {
+        document.getElementById("tab1").style.display = "block"
+        document.getElementById("tab2").style.display = "none"
+      }
+      function tab2() {
+        document.getElementById("tab2").style.display = "block"
+        document.getElementById("tab1").style.display = "none"
+      }
+        
     </script>
   </head>
 <body>
   <p class = text><strong>You've got <span id="energy">1</span>V of Electricity!</strong></p>
+  <button onClick="tab1()">Electricity</button>
+  <button onClick="tab2()">WIP</button>
+  <div id="tab1">
   <p>If the page updated 2</p>
   <button onClick="Energy()">Gather Electrons!</button>
+  </div>
+  <div id="tab2">
+  <p>You're on the second page</p>
+  </div>
 </body>
 </html>
