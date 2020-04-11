@@ -17,8 +17,8 @@
     </style>
     <script>
       var player = {
-        electron: 1
-        electronPC: 1
+        electron = 1
+        electronPC = 1
       }
       var upgrades = {
         electronPCC: 25
@@ -27,17 +27,17 @@
         player.electron += player.electronPC;
         document.getElementById("energy").innerText = player.electron;
       }
-      function tab1show() {
+      function tab1() {
         document.getElementById("tab1").style.display = "block"
         document.getElementById("tab2").style.display = "none"
         document.getElementById("tab3").style.display = "none"
       }
-      function tab2show() {
+      function tab2() {
         document.getElementById("tab1").style.display = "none"
         document.getElementById("tab2").style.display = "block"
         document.getElementById("tab3").style.display = "none"
       }
-      function tab3show() {
+      function tab3() {
         document.getElementById("tab1").style.display = "none"
         document.getElementById("tab2").style.display = "none"
         document.getElementById("tab3").style.display = "block"
@@ -52,16 +52,16 @@
   </head>
 <body>
   <p class = text><strong>You've got <span id="energy">1</span>V of Electricity!</strong></p>
-  <button onClick="tab1show()">Electricity</button>
-  <button onClick="tab2show()">Upgrades</button>
-  <button onClick="tab3show()">Changelog</button>
+  <button onClick="tab1()">Electricity</button>
+  <button onClick="tab2()">Upgrades</button>
+  <button onClick="tab3()">Changelog</button>
   <br>
   <div id="tab1">
-  <button onClick="Energy()">Gather Electrons!</button>
+    <button onClick="Energy()">Gather Electrons!</button>
   </div>
   <div id="tab2">
-  <p>You're on the upgrades page!</p>
-  <button onClick="EnergyPCUpgrade()">Upgrade your electron gathering!</button>
+    <p><strong>You're on the upgrades page!</strong></p>
+    <button onClick="EnergyPCUpgrade()">Upgrade your electron gathering!</button>
   </div>
   <div id="tab3">
     <p><strong>You're on the changelog page!</strong></p>
