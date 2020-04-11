@@ -33,4 +33,4 @@
         else {
         alert("You dont have enough Volts!");
       }
-tab1()
+tab1();
