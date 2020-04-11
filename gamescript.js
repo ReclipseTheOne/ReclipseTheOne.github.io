@@ -27,7 +27,7 @@
       function EnergyPCUpgrade() {
         if(player.electron > upgrades.electronPCC) {
         player.electronPC++;
-        upgrades.electronPCC = upgrades.electronPCC * 1.55;
+        upgrades.electronPCC = upgrades.electronPCC * 2;
         player.electron = player.electron - upgrades.electronPCC;
         document.getElementById("energy").innerText = player.electron;
         }
