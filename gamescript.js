@@ -1,6 +1,6 @@
 var player = {
-        electron = 1,
-        electronPC = 1
+        electron: 1,
+        electronPC: 1
       }
       var upgrades = {
         electronPCC: 25
