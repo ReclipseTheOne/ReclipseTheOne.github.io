@@ -8,6 +8,7 @@
       function Energy() {
         player.electron += player.electronPC;
         document.getElementById("energy").innerText = player.electron;
+        document.getElementById("PCUpgrCost").innerText = upgrades.electronPCC;
       }
       function tab1() {
         document.getElementById("tab1").style.display = "block"
