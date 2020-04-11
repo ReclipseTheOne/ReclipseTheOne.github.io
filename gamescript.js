@@ -27,7 +27,10 @@
       function EnergyPCUpgrade() {
         if(player.electron > upgrades.electronPCC) {
         player.electronPC++;
-        upgrades.electronPCC = upgrades.electronPCC * 1.55
+        upgrades.electronPCC = upgrades.electronPCC * 1.55;
+        player.electron = player.electron - upgrades.electronPCC;
         }
+        else {
+        alert("You dont have enough Volts!");
       }
 tab1()
