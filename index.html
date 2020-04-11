@@ -27,17 +27,17 @@
         player.electron += player.electronPC;
         document.getElementById("energy").innerText = player.electron;
       }
-      function tab1() {
+      function tab1show() {
         document.getElementById("tab1").style.display = "block"
         document.getElementById("tab2").style.display = "none"
         document.getElementById("tab3").style.display = "none"
       }
-      function tab2() {
+      function tab2show() {
         document.getElementById("tab1").style.display = "none"
         document.getElementById("tab2").style.display = "block"
         document.getElementById("tab3").style.display = "none"
       }
-      function tab3() {
+      function tab3show() {
         document.getElementById("tab1").style.display = "none"
         document.getElementById("tab2").style.display = "none"
         document.getElementById("tab3").style.display = "block"
@@ -52,9 +52,10 @@
   </head>
 <body>
   <p class = text><strong>You've got <span id="energy">1</span>V of Electricity!</strong></p>
-  <button onClick="tab1()">Electricity</button>
-  <button onClick="tab2()">Upgrades</button>
-  <button onClick="tab3()">Changelog</button>
+  <button onClick="tab1show()">Electricity</button>
+  <button onClick="tab2show()">Upgrades</button>
+  <button onClick="tab3show()">Changelog</button>
+  <br>
   <div id="tab1">
   <button onClick="Energy()">Gather Electrons!</button>
   </div>
