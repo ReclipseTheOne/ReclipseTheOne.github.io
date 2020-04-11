@@ -25,10 +25,10 @@
         document.getElementById("tab3").style.display = "block"
       }
       function EnergyPCUpgrade() {
-        if(player.electron > upgrades.electronPCC) {
+        if(player.electron >= upgrades.electronPCC) {
         player.electronPC++;
-        upgrades.electronPCC = upgrades.electronPCC * 2;
         player.electron = player.electron - upgrades.electronPCC;
+        upgrades.electronPCC = upgrades.electronPCC * 2;
         document.getElementById("energy").innerText = player.electron;
         }
         else {
