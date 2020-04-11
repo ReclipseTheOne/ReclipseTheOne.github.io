@@ -30,3 +30,4 @@
         upgrades.electronPCC = upgrades.electronPCC * 1.55
         }
       }
+tab1()
