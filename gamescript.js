@@ -29,6 +29,7 @@
         player.electronPC++;
         upgrades.electronPCC = upgrades.electronPCC * 1.55;
         player.electron = player.electron - upgrades.electronPCC;
+        document.getElementById("energy").innerText = player.electron;
         }
         else {
         alert("You dont have enough Volts!");
