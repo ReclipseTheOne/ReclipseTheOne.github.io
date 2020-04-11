@@ -1,8 +1,8 @@
-var player = {
+      let player = {
         electron: 1,
         electronPC: 1
       }
-      var upgrades = {
+      let upgrades = {
         electronPCC: 25
       }
       function Energy() {
