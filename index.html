@@ -18,20 +18,36 @@
     <script>
       var player = {
         electron: 1
+        electronPC: 1
+      }
+      var upgrades = {
+        electronPCC: 25
       }
       function Energy() {
-        player.electron++;
+        player.electron += player.electronPC;
         document.getElementById("energy").innerText = player.electron;
       }
       function tab1() {
         document.getElementById("tab1").style.display = "block"
         document.getElementById("tab2").style.display = "none"
+        document.getElementById("tab3").style.display = "none"
       }
       function tab2() {
-        document.getElementById("tab2").style.display = "block"
         document.getElementById("tab1").style.display = "none"
+        document.getElementById("tab2").style.display = "block"
+        document.getElementById("tab3").style.display = "none"
       }
-        
+      function tab3() {
+        document.getElementById("tab1").style.display = "none"
+        document.getElementById("tab2").style.display = "none"
+        document.getElementById("tab3").style.display = "block"
+      }
+      function EnergyPCUpgrade() {
+        if(player.electron > upgrades.electronPCC) {
+        player.electronPC++;
+        upgrades.electronPCC = upgrades.electronPCC * 1.55
+        }
+      }
     </script>
   </head>
 <body>
@@ -43,7 +59,13 @@
   <button onClick="Energy()">Gather Electrons!</button>
   </div>
   <div id="tab2">
-  <p>You're on the upgrades page page</p>
+  <p>You're on the upgrades page!</p>
+  <button onClick="EnergyPCUpgrade()">Upgrade your electron gathering!</button>
+  </div>
+  <div id="tab3">
+    <p><strong>You're on the changelog page!</strong></p>
+    <p>The changes will appear from this update on!</p>
+    <p>April 11 2020: Added the changellog page and the first upgrade! v0.1</p>
   </div>
 </body>
 </html>
